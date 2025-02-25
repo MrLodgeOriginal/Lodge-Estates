@@ -1,0 +1,202 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #fff;
+}
+
+/* Hero section */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+}
+
+.hero-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#hero-video {
+    object-fit: cover; /* Ensures video covers the full background */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensures content appears above video */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFD700; /* Gold */
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #FFC300; /* Slightly darker gold */
+}
+
+}
+
+/* Enhanced Contact Section */
+#contact {
+    background-color: #111; /* Dark background for contrast */
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #FFD700; /* Gold color for text */
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #ddd; /* Light gray for better readability */
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #222; /* Slightly darker background for form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    padding-left: 40px; /* Adding space for icons */
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: #444; /* Focus state */
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold color for icons */
+    pointer-events: none; /* Disable icon interaction */
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #111;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #FFC300; /* Slightly darker gold */
+    transform: translateY(-2px);
+}
+
+/* Animations (for smooth effects) */
+#contact h2,
+#contact p {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.contact-form {
+    animation: fadeInUp 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

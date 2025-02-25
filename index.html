@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodge Estates</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section (for video) -->
+    <section id="hero">
+    <div class="hero-video-wrapper">
+        <video autoplay muted loop id="hero-video">
+            <source src="images/2048246-hd_1920_1080_24fps.mp4" type="video/mp4">
+            <source src="images/2048246-hd_1920_1080_24fps.webm" type="video/webm">
+            <source src="2048246-hd_1920_1080_24fps.ogv" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-content">
+        <h1>Welcome to Lodge Estates</h1>
+        <p>Your vision is our priority</p>
+        <a href="#contact" class="cta-btn">Get in Touch</a>
+    </div>
+</section>
+
+
+    <!-- Enhanced Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+
+            <div class="form-wrapper">
+                <form action="#" method="POST" class="contact-form">
+                    <!-- Name Field with Icon -->
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <!-- Email Field with Icon -->
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <!-- Message Field with Icon -->
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+
+                    <!-- Submit Button with Hover Effect -->
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
